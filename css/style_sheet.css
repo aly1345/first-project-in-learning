@@ -1,0 +1,577 @@
+
+
+/*
+  ------------------------------------------
+  -----------------general------------------
+  ------------------------------------------
+*/
+
+
+
+
+* {margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.clear {
+    clear:both;
+}
+
+body {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+
+
+/*---------------------navbar---------------------*/
+
+
+
+
+
+
+.nav {
+    height: 100%;
+    width:170px;
+    position: fixed;
+    right: 0;
+    direction: rtl;
+    z-index: 2;
+}
+
+.nav ul {
+    display: block;
+    position: absolute;
+    top:40%;
+    right:55px;
+}
+
+.nav ul li {  
+    color: #dd5138 ;
+    width: 100%;
+    height: 100%;
+}
+
+li::marker {
+    font-size: 2rem;
+}
+
+.nav ul li a {
+    display: block;
+    background-color:  #dd5138;
+    padding: 7px 3px;
+    color: white;
+    margin: 2px 0;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s, visibility 0.7s;
+    border-radius: 5px;
+}
+
+.nav ul li:hover a {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+/*---------------------interface---------------------*/
+
+
+
+
+.interface {
+    width: 100%;
+    height: 73%;
+    background-color: #016cc7;
+}
+
+.inter-r, .rocket {
+    float: left;
+    width: 50%;
+}
+
+.inter-text{
+    height: 70%;
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+}
+
+.inter-text button i {
+    margin-left: 9px;
+    font-size: 20px;
+}
+
+.inter-text > h1, .text, .history {
+    color: white;
+    font-family: inherit;
+}
+
+.logo{
+    height: 30%;
+    width: 100%;
+    padding:90px;
+}
+
+h1 {
+    padding: 25px 0 0 90px;
+    font-weight: 200;
+}
+
+ .inter-text .text, .history {
+    padding: 25px 0 0 90px;
+}
+
+.inter-text .text {
+    font-size: 24px;
+}
+
+.inter-text .history {
+    font-size: 19px;
+    opacity: 0.6;
+}
+
+.inter-button {
+    width: 234px;
+    height: 53px;
+    margin: 70px 0 0 90px;
+    border-radius: 5px;
+    background-color: #dd5138;
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.5s;
+}
+
+.inter-button:hover {
+    color: black;
+}
+
+
+ .rocket {
+    padding: 100px 0 0 160px;
+ }
+
+
+
+
+
+ /*---------------------work---------------------*/
+
+
+
+.work {
+    width: 74%;
+    margin: auto;
+}
+
+.icons {
+    margin: 80px 0;
+}
+
+.event-super-title {
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    margin: 40px auto 20px auto;
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.ticket, .microphone, .world {
+    width: 30%;
+    text-align: center;
+    color:  #404142;
+    float: left;
+}
+
+.microphone {
+    margin: 0 5%;
+}
+
+.fa-ticket, .fa-microphone-lines, .fa-globe {
+    color: #016cc7;
+    font-size:70px;
+    display: inline-block;
+    width: 100%;
+    padding: 0 100px 0 100px;
+}
+
+.icon-title, .icon-title-text {
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/*---------------------speakers---------------------*/
+
+
+
+.speaker-head {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.speaker-content {
+    width: 32%;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 3px solid #f6f6f6;
+}
+
+.speaker-img {
+   padding: 20px;
+}
+
+.speaker-img img {
+    display: block;
+    margin: auto;
+    width: 120px;
+    height: 12s0px;
+    border: 4px solid #efefef;
+    border-radius: 50%;
+}
+
+.speaker-title {
+    margin: 10px;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.speaker-icons {
+    padding: 25px 0;
+}
+
+.fa-facebook-f {
+    color: #3b5998;
+}
+
+.work .fa-twitter{
+    color: #337ab7;
+}
+
+.fa-linkedin-in {
+    color: #337ab7;
+}
+
+.work .fa-twitter {
+    margin: 0 30px;
+}
+
+.speaker-content {
+    float: left;
+}
+
+.float-2 {
+    margin-top: 20px;
+}
+
+.speaker-between {
+    margin: 0 20px;
+}
+
+
+
+
+
+
+/*---------------------yellow---------------------*/
+
+
+
+.yellow {
+    margin: 30px 0;
+    width: 100%;
+    height: 390px;
+    background-color: #fcd93b;
+}
+
+.yellow-title {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 0 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.yellow-title p {
+    font-size: 30px;
+    font-family: inherit;
+    text-transform: capitalize;
+}
+
+.bird, .shop {
+    width: 44%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bird {
+    padding-left: 400px;
+}
+
+.early-bird, .workshop {
+    font-size: 30px;
+    font-family: inherit;
+    text-transform: capitalize;
+    margin: 15px;
+}
+
+.price {
+    color: #dd5138;
+    font-size: 70px;
+}
+
+.yellow-text-in {
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: 550;
+}
+
+.yellow-text button {
+    width: 205px;
+    height: 55px;
+    background-color: #dd5138;
+    border-radius: 4px;
+    color: white;
+}
+
+
+
+
+
+
+/*---------------------Event---------------------*/
+
+
+.event-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 60px;
+}
+
+.person {
+    width: 48%;
+    float: left;
+    margin: 50px 0;
+}
+
+.person-img {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    top: -20px;
+}
+
+.person-text {
+    display: inline-block;
+    width: 78%;
+}
+
+.person .person-text b {
+    font-size: 16px;
+    margin: 15px 0 0 0;
+}
+
+.person p {
+    margin: 10px 0;
+}
+
+.person-time {
+    font-size: 20px;
+    display: block;
+    padding-bottom: 10px;
+    width: 90%;
+    border-bottom: 2px solid #efefef;
+}
+
+.person-dis {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/*---------------------contact---------------------*/
+
+
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    background-color: #3a3a3a;
+    color: white;
+}
+
+.contact-form {
+    display: inline-block;
+    width: 53%;
+}
+
+.contact-form .form-title {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+}
+
+.form-title p {
+    padding: 30px;
+}
+
+form {
+    margin-top: 20px;
+    display: block;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.input-div {
+    margin: 20px 0;
+}
+
+.input-n {
+    width: 600px;
+    height: 40px;
+}
+
+.input-un {
+    width: 600px;
+    height: 100px;
+}
+
+label {
+    padding: 0 30px 0 150px;
+}
+
+label, label p {
+    display: inline-block;
+}
+
+label p {
+    opacity: 0;
+    visibility: hidden;
+}
+
+label, input {
+    display: inline-block;
+    margin: 5px;
+}
+
+.contact-form button {
+    margin: 20px  0  0 810px;
+    width: 75px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #fcd93b;
+}
+
+.contact-twitter {
+    position: absolute;
+    top: 0;
+    width: 46%;
+    display: inline-block;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    height: 100%;
+}
+
+.contact-twitter a {
+    color:#337ab7;
+}
+
+.contact-twitter-title {
+    margin: 35px;
+    font-size: 24px;
+}
+
+.contact-twitter-title i {
+    display: inline-block;
+}
+
+.contact-twitter-title p {
+    display: inline-block;
+}
+
+.contact-twitter-line {
+    margin: 20px;
+}
+
+.contact-twitter-line2 {
+    padding: 15px;
+    width: 70%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 0 15%;
+}
+
+
+
+
+
+
+/*---------------------end---------------------*/
+
+
+
+.end {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 35px;
+    font-size: 16px;
+}
+
+.end-copy, .end-link {
+    display: inline-block;
+    width: 49%;
+}
+
+.end-link {
+    text-align: right;
+}
+
+.end-link a {
+    margin: 0 15px;
+    color:#fcd93b;
+}
+
+.end-copy {
+    word-spacing: 2px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.end-copy a {
+    color:#337ab7;
+}
